@@ -1,4 +1,8 @@
 var rows = parseInt(prompt("Enter the number of rows:"));
+while(rows <= 0){
+    alert("Please enter a valid positive integer: ");
+    var rows = parseInt(prompt("Enter the number of rows:"));
+}
 
 for (var i = 0; i < rows; i++){
     console.log(" ".repeat(rows - i) + "*".repeat(i * 2 + 1));
